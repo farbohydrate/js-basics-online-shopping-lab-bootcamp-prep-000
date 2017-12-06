@@ -25,7 +25,7 @@ function viewCart() {
     for(let i = 0; i < theCart.length; i++){
       let key = Object.keys(theCart[i])[0];
       let price = theCart[i][key];
-      if(i === theCart.length - 1){
+      if(theCart.length > 1 && i === theCart.length - 1){
         output += ' and';
       }
       output += ` ${key} at $${price}`;
