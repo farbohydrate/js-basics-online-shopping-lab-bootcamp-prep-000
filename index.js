@@ -41,8 +41,8 @@ function total() {
   var totalPrice = 0;
   for(let i = 0; i < theCart.length - 1; i++){
     let key = Object.keys(theCart[i])[0];
-    let price = parseInt(theCart[i][key]);
-    console.log(price);
+    let price = theCart[i][key];
+    console.log(key + price);
     totalPrice += price;
   }
   return totalPrice;
