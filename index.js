@@ -38,9 +38,13 @@ function viewCart() {
 
 function total() {
   var theCart = getCart();
+  var total = 0;
   for(let i = 0; i < theCart.length - 1; i++){
-    
+    let key = Object.keys(theCart[i])[0];
+    let price = parseInt(theCart[i][key]);
+    total += price;
   }
+  return total;
 }
 
 function removeFromCart(item) {
