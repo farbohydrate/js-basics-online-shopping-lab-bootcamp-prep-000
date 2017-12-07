@@ -45,7 +45,7 @@ function total() {
     console.log(price);
     totalPrice += price;
   }
-  return total;
+  return totalPrice;
 }
 
 function removeFromCart(item) {
