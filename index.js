@@ -44,7 +44,6 @@ function total() {
     let price = theCart[i][key];
     console.log(key);
     console.log(price);
-
   }
 }
 
