@@ -39,6 +39,7 @@ function viewCart() {
 function total() {
   var theCart = getCart();
   for(let i = 0; i < theCart.length - 1; i++){
+    
   }
 }
 
