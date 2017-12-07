@@ -38,14 +38,14 @@ function viewCart() {
 
 function total() {
   var theCart = getCart();
-  var totalPrice = 0;
+
   for(let i = 0; i < theCart.length - 1; i++){
     let key = Object.keys(theCart[i])[0];
     let price = theCart[i][key];
-    console.log(key + price);
-    totalPrice += price;
+    console.log(key);
+
   }
-  return totalPrice;
+
 }
 
 function removeFromCart(item) {
