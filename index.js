@@ -43,9 +43,9 @@ function total() {
     let key = Object.keys(theCart[i])[0];
     let price = theCart[i][key];
     console.log(key);
+    console.log(price);
 
   }
-
 }
 
 function removeFromCart(item) {
