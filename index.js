@@ -29,7 +29,8 @@ function viewCart() {
         output += ' and';
       }
       output += ` ${key} at $${price}`;
-      output += (i === theCart.length - 1 && theCart.length > 2) ? '.' : ',';
+      output += (theCart.length > 2 && i != theCart.length - 1) ? ',' : '';
+      output += (i === theCart.length - 1) ? '.' : '';
     }
     console.log(output);
   }
