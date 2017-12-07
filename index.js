@@ -41,9 +41,10 @@ function total() {
   var totalPrice = 0;
   for(let i = 0; i < theCart.length; i++){
     let key = Object.keys(theCart[i])[0];
-    let price = theCart[i][key];
-    
+    let price = parseInt(theCart[i][key]);
+    totalPrice += price;
   }
+  return totalPrice;
 }
 
 function removeFromCart(item) {
